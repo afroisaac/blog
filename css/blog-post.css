@@ -18,6 +18,7 @@
 
 .post{
     grid-area: main;
+    padding: 4px 4px;
 }
 
 .sidebar{
@@ -32,10 +33,15 @@
 @media (min-width: 900px){
     .container{
         grid-template-rows: 80px 1fr 1fr 100px;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
         "header header header header"
-        "sidebar main main main"
+        "main main main sidebar"
         "footer footer footer footer";
+    }
+
+    .post{
+        padding: 20px 40px;
+        border:1px solid;
     }
 }

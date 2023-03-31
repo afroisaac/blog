@@ -1,0 +1,41 @@
+@import url("components/button.css");
+@import url("components/typography.css");
+@import url("components/menu.css");
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 1fr 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar" 
+    "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.post{
+    grid-area: main;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: var(--primary-color);
+}
+
+@media (min-width: 900px){
+    .container{
+        grid-template-rows: 80px 1fr 1fr 100px;
+        grid-template-columns: 75% 25%;
+        grid-template-areas:
+        "header header header header"
+        "sidebar main main main"
+        "footer footer footer footer";
+    }
+}

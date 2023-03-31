@@ -1,0 +1,36 @@
+@import url("color.css");
+
+.button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button-wrapper{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.primary-button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.primary-button:hover{
+    background-color: var(--slate-light);
+    color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+}
+
+.secondary-button{
+    background-color: var(--slate-light);
+    color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+}
+
+.secondary-button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    outline: 2px solid var(--primary-color);
+}

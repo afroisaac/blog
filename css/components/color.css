@@ -1,0 +1,8 @@
+:root{
+    --primary-color:rgb(88, 28, 135);
+    --secondary-color:rgb(233, 213, 255);
+    --accent-color: rgb(219, 39, 119);
+    --slate-color: rgb(248, 250, 252);
+    --shadow-start-color: rgba(88, 28, 135, 0.2);
+    --shadow-end-color: rgba(88, 28, 135, 0.19);
+}

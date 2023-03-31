@@ -1,0 +1,76 @@
+@import url("fonts.css");
+
+/* Body text */
+body{
+    font-family: var(--body-font);
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* headings */
+h1, h2, h3{
+    font-weight: 700;
+    font-family: var(--header-font);
+    line-height: 1.2;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 2.25rem;
+}
+
+h2{
+    font-size: 1.875rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+/* links */
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+p{
+    font-family: var(--body-font);
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+blockquote{
+    font-style: italic;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    font-family: var(--body-font);
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+/* input */
+input{
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+/* Lists */
+ul, ol {
+    margin: 0 0 20px 20px;
+  }
+
+.copyright{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+:root{
+    --header-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}

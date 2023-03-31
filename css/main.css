@@ -1,0 +1,50 @@
+@import url("components/card.css");
+@import url("components/button.css");
+@import url("components/typography.css");
+@import url("components/input.css");
+@import url("components/menu.css");
+@import url("components/icons.css");
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 220px 1fr 300px 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "subscription"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.subscription{
+    grid-area: subscription;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    gap: 4px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: var(--primary-color);
+}
+
+@media (min-width: 900px){
+    .container{
+        grid-template-rows: 80px 1fr 300px 100px;
+    }
+}

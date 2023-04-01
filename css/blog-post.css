@@ -1,10 +1,13 @@
 @import url("components/button.css");
 @import url("components/typography.css");
 @import url("components/menu.css");
+@import url("components/hero.css");
+@import url("components/avatar.css");
+@import url("components/icons.css");
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 220px 1fr 1fr 100px;
+    grid-template-rows: 220px auto auto 100px;
     grid-template-areas: 
     "header"
     "main"
@@ -18,11 +21,48 @@
 
 .post{
     grid-area: main;
-    padding: 4px 4px;
+    padding-top: 20px 0;
 }
 
 .sidebar{
     grid-area: sidebar;
+    padding: 0 20px 20px 20px;
+}
+
+.post-body{
+    padding: 16px 20px;
+}
+.post-meta{
+    display: flex;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.social-share{
+    display: flex;
+}
+
+.socials{
+    display:flex;
+    gap: 12px;
+}
+
+.sidebar-inner{
+    padding-bottom: 20px;
+}
+
+.sidebar-item{
+    padding-bottom: 20px;
+}
+
+.item-title{
+    margin-bottom: 6px;
+}
+
+.item-meta{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer{
@@ -32,7 +72,7 @@
 
 @media (min-width: 900px){
     .container{
-        grid-template-rows: 80px 1fr 1fr 100px;
+        grid-template-rows: 80px 1fr 100px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
         "header header header header"
@@ -40,8 +80,11 @@
         "footer footer footer footer";
     }
 
-    .post{
+    .post-body{
         padding: 20px 40px;
-        border:1px solid;
+    }
+
+    .sidebar{
+        padding: 40px 40px 0px 0px;
     }
 }

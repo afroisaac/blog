@@ -20,16 +20,18 @@
     padding: 0 15px;
 }
 
-.post-title{
+.card-post-title{
+    margin-top: 2px;
     margin-bottom: 2px;
 }
 
-.post-meta{
+.card-post-meta{
     display: flex;
     justify-content: space-between;
+    padding: 4px 15px;
 }
 
-.post-author, .post-date{
+.card-post-author, .card-post-date{
     font-style: italic;
 }
 

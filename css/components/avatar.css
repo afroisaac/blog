@@ -1,0 +1,13 @@
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.avatar-img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    outline: 1px solid var(--primary-color);
+}
+

@@ -11,3 +11,9 @@
     outline: 1px solid var(--primary-color);
 }
 
+.avatar-img-medium{
+    height: 80px;
+    width: 80px;
+    outline: 1px solid var(--primary-color);
+    border-radius: 50%;
+}

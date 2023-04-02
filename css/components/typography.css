@@ -44,6 +44,29 @@ p{
     line-height: 1.6;
 }
 
+.underlined-text{
+    text-decoration: underline;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.small-text{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.bio{
+    font-size: 0.9rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
 blockquote{
     font-style: italic;
     line-height: 1.8;
